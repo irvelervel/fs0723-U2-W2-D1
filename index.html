@@ -59,12 +59,12 @@
           </div>
         </div>
       </nav>
-      <!-- azzero i margini dell'h1 -->
-      <h1 class="m-0 ps-3">Hello, world!</h1>
     </header>
-    <main class="ps-3">
-      <section class="mt-3">
-        <h2>BOTTONI</h2>
+    <main>
+      <!-- voglio che questa section si comporti da block su mobile, e da large in su diventi flex, con 
+            flex-direction: column e align-items: center -->
+      <section class="mt-3 d-block d-lg-flex flex-column align-items-center">
+        <h2 class="text-center">BOTTONI</h2>
         <div>
           <button type="button" class="btn btn-primary">Primary</button>
           <button type="button" class="btn btn-secondary">Secondary</button>
@@ -146,10 +146,25 @@
           <label class="btn btn-outline-primary" for="btnradio3">Radio 3</label>
         </div>
       </section>
-      <section class="mt-3">
-        <h2>CARDS</h2>
+      <!-- BREAKPOINT DISPONIBILI -> sm, md, lg, xl, xxl -->
+      <!-- voglio applicare un margine superiore di 3 solamente da lg in su -> class="mt-lg-3" -->
+      <!-- <section class="mt-lg-3"> -->
+      <!-- voglio applicare un margine superiore di 1 su mobile, e 3 da lg in su -> class="mt-1 mt-lg-3" -->
+      <!-- <section class="mt-1 mt-lg-3"> -->
+      <!-- voglio applicare un margine superiore di 1 su mobile, 2 su md e 4 da xl in su -> class="mt-lg-3" -->
+      <!-- --- -->
+      <section class="ms-0 ms-md-2 ms-xl-4"></section>
+      <!-- mobile (xs) -> 0 -->
+      <!-- small (sm) -> 0 -->
+      <!-- medium (md) -> 2 -->
+      <!-- large (lg) -> 2 -->
+      <!-- extralarge (xl) -> 4 -->
+      <!-- extraextralarge (xxl) -> 4 -->
+
+      <section class="mt-1 mt-md-2 mt-xl-4">
+        <h2 class="text-center">CARDS</h2>
         <article>
-          <div class="card" style="width: 18rem">
+          <div class="card mx-auto" style="width: 18rem">
             <img
               src="https://placekitten.com/300"
               class="card-img-top"
@@ -164,7 +179,7 @@
               <a href="#" class="btn btn-primary">Go somewhere</a>
             </div>
           </div>
-          <div class="card" style="width: 18rem">
+          <div class="card mx-auto" style="width: 18rem">
             <img
               src="https://placekitten.com/300"
               class="card-img-top"
@@ -180,6 +195,20 @@
             </div>
           </div>
         </article>
+      </section>
+      <section class="mt-4">
+        <h2 class="text-center">TESTO E BORDI</h2>
+        <p
+          class="m-4 p-2 border border-danger border-2 rounded-5 rounded-bottom-0 fs-5 text-danger bg-info justified-text"
+        >
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo
+          maxime, pariatur, deserunt dolorum minus quas maiores recusandae
+          veritatis sunt facere saepe? Consequuntur nostrum labore sit quidem,
+          recusandae magnam ex eligendi! Lorem ipsum dolor, sit amet consectetur
+          adipisicing elit. Explicabo maxime, pariatur, deserunt dolorum minus
+          quas maiores recusandae veritatis sunt facere saepe? Consequuntur
+          nostrum labore sit quidem, recusandae magnam ex eligendi!
+        </p>
       </section>
     </main>
     <script
