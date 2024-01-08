@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/grid-system.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="text-center mt-2">Grid System in BS</h1>
+    </header>
+    <!-- uno degli aspetti più potenti di bootstrap è il suo sistema di impaginazione dinamico a 12 colonne -->
+    <!-- per poter essere utilizzato necessitiamo di 3 ELEMENTI: "container", "row", "col" -->
+    <main>
+      <div class="container">
+        <!-- questo è il contenitore più esterno -->
+        <!-- dentro il container, ci va 1 o più "row" -->
+        <div class="row">
+          <!-- una row è un elemento orizzontale che conterrà delle "col" -->
+          <div class="col text-center">
+            <div>SONO UNA COL</div>
+            <img src="https://placedog.net/300" class="w-100" />
+          </div>
+          <div class="col text-center">
+            <div>SONO UNA COL</div>
+            <img src="https://placedog.net/300" class="w-100" />
+          </div>
+          <div class="col text-center">
+            <div>SONO UNA COL</div>
+            <img src="https://placedog.net/300" class="w-100" />
+          </div>
+          <div class="col text-center">
+            <div>SONO UNA COL</div>
+            <img src="https://placedog.net/300" class="w-100" />
+          </div>
+        </div>
+      </div>
+      <div class="container mt-5">
+        <!-- questo è il contenitore più esterno -->
+        <!-- dentro il container, ci va 1 o più "row" -->
+        <div class="row">
+          <!-- una row è un elemento orizzontale che conterrà delle "col" -->
+          <!-- questi gatti dovranno comportarsi così: -->
+          <div class="col-12 col-md-6 col-lg-4 col-xl-3 text-center">
+            <div>SONO UNA COL</div>
+            <img src="https://placekitten.com/300" class="w-100" />
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 col-xl-3 text-center">
+            <div>SONO UNA COL</div>
+            <img src="https://placekitten.com/300" class="w-100" />
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 col-xl-3 text-center">
+            <div>SONO UNA COL</div>
+            <img src="https://placekitten.com/300" class="w-100" />
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 col-xl-3 text-center">
+            <div>SONO UNA COL</div>
+            <img src="https://placekitten.com/300" class="w-100" />
+          </div>
+        </div>
+      </div>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
