@@ -1,0 +1,8 @@
+/* qui dentro scriviamo le "eccezioni", ovvero gli override che vogliamo fare alle regole di bootstrap */
+nav.bg-body-tertiary {
+  background-color: pink !important;
+}
+
+nav img {
+  width: 50px;
+}
